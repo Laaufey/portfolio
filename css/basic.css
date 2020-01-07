@@ -30,6 +30,20 @@ body {
     margin: 0 auto;
 }
 
+#bodycontent{
+     grid-template-areas:
+        "header header header header"
+        ". title title ."
+        ". p1 p2 ."
+        ". p3 p4 ."
+        ". p5 p6 ."
+        ". p7 p8 ."
+        ". title2 title2 ."
+        ". title3 title3 ."
+        ". p17 p17 ."
+        ". footer footer .";
+}
+
 /* NAVIGATIONBAR */
 .logo {
     height: 90px;
@@ -38,6 +52,7 @@ body {
     margin-left: 20px;
     float: left;
 }
+
 
 nav a {
     font-family: 'Kiona', sans-serif;
@@ -307,7 +322,17 @@ h2 {
     font-family: 'Kiona', sans-serif;
     font-size: 4vh;
     margin: 0;
+    color: black;
+}
 
+.button{
+    text-decoration: none;
+    color: black;
+    margin-top: -10px;
+}
+
+.button:hover{
+    color: pink;
 }
 
 h2:after {
@@ -329,7 +354,7 @@ p {
     font-size: 2vh;
     font-family: sans-serif;
     font-weight: 200;
-    text-align: justify;
+
 }
 
 @font-face {
