@@ -278,7 +278,7 @@ li a {
         left: 0%;
     }
 }
-#slider{
+#slider, #slider1, #slider2{
     overflow: hidden;
 }
 #slider figure img {
@@ -286,6 +286,28 @@ li a {
     float: left;
 }
 #slider figure {
+    width: 500%;
+    animation: 20s slideshow infinite;
+    position: relative;
+    margin: 0;
+    grid-area: p1;
+}
+#slider1 figure img {
+    width: 20%;
+    float: left;
+}
+#slider1 figure {
+    width: 500%;
+    animation: 20s slideshow infinite;
+    position: relative;
+    margin: 0;
+    grid-area: p1;
+}
+#slider2 figure img {
+    width: 20%;
+    float: left;
+}
+#slider2 figure {
     width: 500%;
     animation: 20s slideshow infinite;
     position: relative;

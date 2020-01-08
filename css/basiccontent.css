@@ -268,7 +268,7 @@ li a {
 }
 
 
-#slider {
+#slider, #slider1 {
     overflow: hidden;
     margin-top: 5%;
 }
@@ -278,12 +278,25 @@ li a {
     float: left;
 }
 
-#slider figure {
+#slider1 figure {
     width: 500%;
     animation: 20s slideshow infinite;
     position: relative;
     margin: 0;
 }
+
+#slider1 figure img {
+    width: 20%;
+    float: left;
+}
+
+#slider2 figure {
+    width: 500%;
+    animation: 20s slideshow infinite;
+    position: relative;
+    margin: 0;
+}
+
 
 /* FONTS */
 h1 {

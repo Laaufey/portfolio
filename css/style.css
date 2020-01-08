@@ -24,6 +24,7 @@
            "main main main"
            ". aside ."
            ". side .";
+
    }
 
    /* HOME PAGE */
@@ -35,15 +36,11 @@
 
    }
 
-   .greeting {
+   .name {
        font-size: 5em;
        margin: 5px;
-       margin-bottom: 35px;
+       margin-bottom: 30px;
        color: #FFFFFF;
-       grid-column-start: 2;
-       grid-column-end: 3;
-       grid-row-start: 2;
-       grid-row-end: 3;
        grid-area: main;
        text-align: center;
        font-family: 'Kiona';
@@ -61,33 +58,40 @@
    .buttons {
        text-decoration: none;
        list-style-type: none;
-       margin: auto
+       margin: auto;
+       text-align: center;
+
    }
 
    .button1 {
        text-decoration: none;
-       text-align: right;
-       margin: 20px;
+       text-align: center;
+       margin: 5px;
        grid-area: aside;
+
    }
 
    .button2 {
        text-decoration: none;
-       text-align: left;
-       margin: 20px;
+       text-align: center;
+       margin: 5px;
        grid-area: side;
    }
 
    a {
        text-decoration: none;
+       color: white;
+
    }
 
    li {
        font-family: 'Kiona';
-       font-size: 4em;
+       font-size: 3em;
        color: #FFFFFF;
        list-style-type: none;
        cursor: pointer;
+            text-align: center;
+
    }
 
    li:hover {
@@ -117,7 +121,7 @@ ul{
 
    @media (max-width: 1100px) {
        /* HOME PAGE */
-/* ABOUT ME */
+
 
    }
 
@@ -125,7 +129,6 @@ ul{
 
        /* HOME PAGE */
        body {
-           background-color: green;
            display: grid;
            grid-template-columns: 1fr 5fr 1fr;
            grid-template-areas:
@@ -138,32 +141,30 @@ ul{
        .button1,
        .button2 {
            font-size: 15px;
+                text-align: center;
        }
 
-       .greeting {
+       .name {
            font-size: 3em;
            letter-spacing: 15px;
-       }
-       /* ABOUT ME */
-   }
 
+       }
+
+   }
+s
    @media (max-width: 630px) {
 
        /* HOME PAGE */
-       body {
-           background-color: red;
-       }
+
         ul{
         padding-right: 20px;
     }
-       /* ABOUT ME */
+
    }
 
    @media (max-width: 450px) {
 
        /* HOME PAGE */
-       body {
-           background-color: yellow;
-       }
-       /* ABOUT ME */
+
+
    }
