@@ -9,17 +9,17 @@ body {
         ". p1 p2 ."
         ". p3 p4 ."
         ". title2 title2 ."
-        ". p9 p10 ."
+        ". p9 p9 ."
         ". p11 p12 ."
         ". p13 p14 ."
         ". title3 title3 ."
         ". p17 p18 ."
-        ". p19 p20 ."
         ". title4 title4 ."
-        ". p25 p26 ."
+        ". p25 p25 ."
         ". p27 p28 ."
         ". p29 p30 ."
         ". p31 p32 ."
+        ". p33 p33 ."
         ". footer footer .";
     grid-gap: 30px;
     margin: 0 auto;
@@ -235,6 +235,10 @@ li a {
     grid-area: p32;
 }
 
+#page33 {
+    grid-area: p33;
+}
+
 /* SLIDESHOWS */
 
 @keyframes slideshow {
@@ -288,23 +292,14 @@ li a {
     margin: 0;
     grid-area: p1;
 }
-
-#page17 {
-    overflow: hidden;
+.prince{
+    height: auto;
+    width: 60vw;
 }
-
-#page17 figure img {
-    width: 20%;
-    float: left;
+.pierre1{
+     height: auto;
+    width: 35vw;
 }
-
-#page17 figure {
-    width: 500%;
-    animation: 20s slideshow infinite;
-    position: relative;
-    margin: 0;
-}
-
 /* FONTS */
 h1 {
     font-family: 'Kiona', sans-serif;
@@ -316,7 +311,6 @@ h2 {
     font-family: 'Kiona', sans-serif;
     font-size: 4vh;
     margin: 0;
-
 }
 
 .button {
@@ -362,8 +356,43 @@ p {
 }
 
 @media (max-width: 850px) {
-    body {
-        grid-gap: 15px;
+   body {
+        display: grid;
+        grid-template-columns: 1fr 7fr 1fr;
+        grid-template-areas:
+            "header header header"
+            ". title ."
+            ". p1 ."
+            ". p2 ."
+            ". p3 ."
+            ". p4 ."
+            ". title2 ."
+            ". p9 ."
+            ". p10 ."
+            ". p11 ."
+            ". p12 ."
+            ". p13 ."
+            ". p14 ."
+            ". title3 ."
+            ". p17 ."
+            ". p18 ."
+            ". p19 ."
+            ". p20 ."
+            ". p21 ."
+            ". p22 ."
+            ". p23 ."
+            ". p24 ."
+            ". title4 ."
+            ". p25 ."
+            ". p26 ."
+            ". p27 ."
+            ". p28 ."
+            ". p29 ."
+            ". p30 ."
+            ". p31 ."
+            ". p32 ."
+            ". footer .";
+       grid-gap: 20px;
     }
 
     .nav {
@@ -413,49 +442,7 @@ p {
 
 @media (max-width: 630px) {
 
-    body {
-        display: grid;
-        grid-template-columns: 1fr 7fr 1fr;
-        grid-template-areas:
-            "header header header"
-            ". title ."
-            ". p1 ."
-            ". p2 ."
-            ". p3 ."
-            ". p4 ."
-            ". p5 ."
-            ". p6 ."
-            ". p7 ."
-            ". p8 ."
-            ". title2 ."
-            ". p9 ."
-            ". p10 ."
-            ". p11 ."
-            ". p12 ."
-            ". p13 ."
-            ". p14 ."
-            ". p15 ."
-            ". p16 ."
-            ". title3 ."
-            ". p17 ."
-            ". p18 ."
-            ". p19 ."
-            ". p20 ."
-            ". p21 ."
-            ". p22 ."
-            ". p23 ."
-            ". p24 ."
-            ". title4 ."
-            ". p25 ."
-            ". p26 ."
-            ". p27 ."
-            ". p28 ."
-            ". p29 ."
-            ". p30 ."
-            ". p31 ."
-            ". p32 ."
-            ". footer .";
-        grid-gap: 20px;
+
     }
 
     ul {
