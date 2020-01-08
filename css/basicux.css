@@ -345,9 +345,33 @@ p {
 
 @media (max-width: 850px) {
     body {
-        grid-gap: 15px;
+        display: grid;
+        grid-template-columns: 1fr 7fr 1fr;
+        grid-template-areas:
+            "header header header"
+            ". title ."
+            ". p1 ."
+            ". p2 ."
+            ". p3 ."
+            ". p4 ."
+            ". title2 ."
+            ". p9 ."
+            ". p10 ."
+            ". p11 ."
+            ". p12 ."
+            ". p13 ."
+            ". p14 ."
+            ". title3 ."
+            ". p17 ."
+            ". p18 ."
+            ". p19 ."
+            ". p20 ."
+            ". p21 ."
+            ". p22 ."
+            ". p23 ."
+            ". footer .";
+        grid-gap: 20px;
     }
-
     .nav {
         display: none;
     }
@@ -395,34 +419,7 @@ p {
 
 @media (max-width: 630px) {
 
-    body {
-        display: grid;
-        grid-template-columns: 1fr 7fr 1fr;
-        grid-template-areas:
-            "header header header"
-            ". title ."
-            ". p1 ."
-            ". p2 ."
-            ". p3 ."
-            ". p4 ."
-            ". title2 ."
-            ". p9 ."
-            ". p10 ."
-            ". p11 ."
-            ". p12 ."
-            ". p13 ."
-            ". p14 ."
-            ". title3 ."
-            ". p17 ."
-            ". p18 ."
-            ". p19 ."
-            ". p20 ."
-            ". p21 ."
-            ". p22 ."
-            ". p23 ."
-            ". footer .";
-        grid-gap: 20px;
-    }
+
 
     ul {
         padding-right: 20px;

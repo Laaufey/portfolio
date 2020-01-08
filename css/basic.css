@@ -8,7 +8,7 @@ body {
         ". title title ."
         ". p1 p2 ."
         ". p3 p4 ."
-        ". p5 p6 ."
+        ". p5 p5."
         ". p7 p7 ."
         ". footer footer .";
     grid-gap: 30px;
@@ -264,14 +264,14 @@ li a {
         left: 0%;
     }
 }
-#slide11{
+#slider{
     overflow: hidden;
 }
-#slide11 figure img {
+#slider figure img {
     width: 20%;
     float: left;
 }
-#slide11 figure {
+#slider figure {
     width: 500%;
     animation: 20s slideshow infinite;
     position: relative;
@@ -279,21 +279,6 @@ li a {
     grid-area: p1;
 }
 
-#page17 {
-    overflow: hidden;
-}
-
-#page17 figure img {
-    width: 20%;
-    float: left;
-}
-
-#page17 figure {
-    width: 500%;
-    animation: 20s slideshow infinite;
-    position: relative;
-    margin: 0;
-}
 
 /* FONTS */
 h1 {
@@ -353,7 +338,21 @@ p {
 
 @media (max-width: 850px) {
     body {
-        grid-gap: 15px;
+        display: grid;
+        grid-template-columns: 1fr 7fr 1fr;
+        grid-template-areas:
+            "header header header"
+            ". title ."
+            ". p1 ."
+            ". p2 ."
+            ". p3 ."
+            ". p4 ."
+            ". p5 ."
+            ". p6 ."
+            ". p7 ."
+
+            ". footer .";
+        grid-gap: 20px;
     }
 
     .nav {
@@ -403,22 +402,7 @@ p {
 
 @media (max-width: 630px) {
 
-    body {
-        display: grid;
-        grid-template-columns: 1fr 7fr 1fr;
-        grid-template-areas:
-            "header header header"
-            ". title ."
-            ". p1 ."
-            ". p2 ."
-            ". p3 ."
-            ". p4 ."
-            ". p5 ."
-            ". p6 ."
-            ". p7 ."
-            ". footer .";
-        grid-gap: 20px;
-    }
+
 
     ul {
         padding-right: 20px;
