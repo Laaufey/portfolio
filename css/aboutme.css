@@ -1,11 +1,17 @@
 body {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
     grid-template-areas:
-        "header header header"
-        ". main ."
-        ". aside ."
-        ". side .";
+        "header header header header header"
+        ". main main main ."
+        ". aside aside aside ."
+        ". side middle1 right1 ."
+        ". footer footer footer .";
+    grid-gap: 20px;
+}
+
+footer{
+    grid-area: footer;
 
 }
 
@@ -91,7 +97,25 @@ li a {
     margin: 0 auto;
     text-align: center;
     grid-area: aside;
+}
 
+.aboutme{
+
+    margin: 0 auto;
+    text-align: center;
+    grid-area: side;
+}
+.aboutme2{
+
+    margin: 0 auto;
+    text-align: center;
+    grid-area: middle1;
+}
+.aboutme3{
+
+    margin: 0 auto;
+    text-align: center;
+    grid-area: right1;
 }
 
 h1,
