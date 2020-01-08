@@ -8,18 +8,13 @@ body {
         ". title title ."
         ". p1 p2 ."
         ". p3 p4 ."
-        ". p5 p6 ."
-        ". p7 p8 ."
         ". title2 title2 ."
         ". p9 p10 ."
         ". p11 p12 ."
         ". p13 p14 ."
-        ". p15 p16 ."
         ". title3 title3 ."
         ". p17 p18 ."
         ". p19 p20 ."
-        ". p21 p22 ."
-        ". p23 p24 ."
         ". title4 title4 ."
         ". p25 p26 ."
         ". p27 p28 ."
@@ -279,14 +274,14 @@ li a {
         left: 0%;
     }
 }
-#slide11{
+#slider{
     overflow: hidden;
 }
-#slide11 figure img {
+#slider figure img {
     width: 20%;
     float: left;
 }
-#slide11 figure {
+#slider figure {
     width: 500%;
     animation: 20s slideshow infinite;
     position: relative;
